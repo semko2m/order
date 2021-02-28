@@ -1,0 +1,22 @@
+<div class="row">
+  <div>
+
+  </div>
+  <div class="col-md-3 col-xs-6" *ngFor="let detail of details; let last = last;">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ detail.status }}</h5>
+        <h6 class="card-subtitle">{{ detail.status_detail}}</h6>
+        <p class="card-text">Location : {{ detail.location}}</p>
+        <p class="card-text">Status Text : {{ detail.status_text }}</p>
+        <p class="card-text">Tracking nmb: {{ detail.tracking_number}}</p>
+      </div>
+    </div>
+    <div class="right-icon" *ngIf="!last">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </div>
+  </div>
+
+</div>
